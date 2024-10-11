@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Cane Salta gli Ostacoli</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gioco del Cane</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightblue;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Stile per il punteggio */
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 36px;
+            color: black;
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
+    <div id="score">Salti: 0</div> <!-- Contatore dei salti -->
     <canvas id="gameCanvas"></canvas>
     <script src="game.js"></script>
 </body>
